@@ -1,0 +1,124 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+ }
+ 
+ body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    color: #333;
+}
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    width: 220px;
+    min-width: 220px;
+    background-color: #0055A4;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0  ;
+}
+.sidebar ul li {
+    max-width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;    
+    border-radius: 8px;
+}
+.sidebar ul li:hover {
+    background-color: #003366;
+    border-radius: 8px;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+.module {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.module h2 {
+    color: #0055A4;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.module h2 i {
+    margin-right: 10px;
+    color: #FF6347;
+}
+.module p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.module .vocab {
+    font-weight: bold;
+    color: #0055A4;
+}
+.quiz {
+    background-color: #E6F0FA;
+    padding: 20px;
+    border-radius: 8px;
+}
+.quiz h3 {
+    color: #0055A4;
+    margin-bottom: 15px;
+}
+.quiz button {
+    background-color: #0055A4;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.quiz button:hover {
+    background-color: #003366;
+}
+.feedback {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.feedback.correct {
+    background-color: #D4EDDA;
+    color: #155724;
+}
+.feedback.incorrect {
+    background-color: #F8D7DA;
+    color: #721C24;
+}
+.drag-drop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.drag-item, .drop-target {
+    padding: 10px;
+    border: 1px solid #0055A4;
+    border-radius: 5px;
+    cursor: move;
+    background-color: #FFFFFF;
+}
+.drop-target {
+    min-height: 50px;
+    background-color: #E6F0FA;
+}

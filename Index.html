@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gustavos page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="./Css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <h2>Course Modules</h2>
+                <ul>
+                    <li onclick="showModule(1)">Module 1: Introduction</li>
+                    <li onclick="showModule(2)">Module 2: Historical Domestication</li>
+                    <li onclick="showModule(3)">Module 3: Genetic Modifications</li>
+                    <li onclick="showModule(4)">Module 4: Groundcherry</li>
+                    <li onclick="showModule(5)">Module 5: Future Prospects</li>
+                    <li onclick="showModule(6)">Assessment</li>
+                </ul>
+            </div>
+            <div class="content">
+                <div id="module1" class="module">
+                    <h2><i class="fas fa-seedling"></i> Module 1: Introduction to Re-Domestication</h2>
+                    <p>Historically, it took over 3,000 years to achieve <span class="vocab">domestication</span> (Domesticación) of the wild tomato. Recent advances using <span class="vocab">CRISPR genome editing</span> (Edición genómica CRISPR) have enabled teams in Brazil and China to re-domesticate tomatoes in under three years, producing varieties more nutritious than current ones. <span class="vocab">CRISPR</span> involves precise DNA modifications, allowing scientists to enhance traits like size and nutrition.</p>
+                    <p>This technology could diversify our food supply by domesticating thousands of the 50,000 edible plants worldwide, as only 15 crops provide 90% of our energy. For example, a U.S. team is domesticating the <span class="vocab">groundcherry</span> (Cereza de tierra), a tomato relative, to improve food security and disease resistance, such as against rust fungus affecting wheat.</p>
+                    <p><strong>Did You Know?</strong> Global food security faces challenges from climate change and population growth. <span class="vocab">CRISPR</span> could help by creating crops that are <span class="vocab">drought tolerant</span> (Tolerante a la sequía) and nutrient-rich, ensuring sustainable agriculture.</p>
+                </div>
+                <div id="module2" class="module" style="display: none;">
+                    <h2><i class="fas fa-history"></i> Module 2: Historical Domestication of Tomatoes</h2>
+                    <p>Wild tomatoes, native to the Andes, produce small, pea-sized fruits. Ancient peoples like the Aztecs bred plants with <span class="vocab">mutations</span> (Mutaciones) to develop larger fruits, a process of <span class="vocab">domestication</span> (Domesticación) spanning centuries. However, selecting single plants reduced genetic diversity, leading to trade-offs, such as supermarket tomatoes losing flavour.</p>
+                    <p>By comparing modern and wild tomato genomes, scientists identified key <span class="vocab">mutations</span>. Teams in Brazil and China used <span class="vocab">CRISPR</span> to reintroduce these changes, preserving desirable traits like flavour while enhancing others, like nutrition.</p>
+                    <p><strong>Did You Know?</strong> Other crops, like maize and potatoes, were domesticated in the Andes, showcasing the region’s role in global agriculture. Genetic diversity is crucial for resilience against pests and climate shifts.</p>
+                </div>
+                <div id="module3" class="module" style="display: none;">
+                    <h2><i class="fas fa-dna"></i> Module 3: Modern Genetic Modifications</h2>
+                    <p>The Brazilian team, led by Jorg Kudla, made six <span class="vocab">CRISPR</span> edits, including modifying the <span class="vocab">FRUIT WEIGHT</span> (Peso del fruto) gene to triple fruit size and the <span class="vocab">MULTIFLORA</span> (Multiflora) gene to increase tomatoes per truss. They also boosted <span class="vocab">lycopene</span> (Licopeno) levels, a red pigment with health benefits, to five times that of cultivated tomatoes.</p>
+                    <p>The Chinese team created strains resistant to <span class="vocab">bacterial spot race</span> (Raza de mancha bacteriana), a disease that devastates yields, and developed salt-tolerant tomatoes with higher vitamin C. These advancements show <span class="vocab">CRISPR</span>’s potential to enhance both yield and nutrition.</p>
+                    <p><strong>Case Study:</strong> <span class="vocab">Lycopene</span> is linked to reduced heart disease risk. By increasing its levels, re-domesticated tomatoes could improve public health while maintaining taste, described as ‘strong and aromatic’ by Kudla.</p>
+                </div>
+                <div id="module4" class="module" style="display: none;">
+                    <h2><i class="fas fa-leaf"></i> Module 4: Groundcherry Domestication</h2>
+                    <p>Joyce Van Eck’s U.S. team applied <span class="vocab">CRISPR</span> to domesticate the <span class="vocab">groundcherry</span> (Cereza de tierra), also known as <span class="vocab">goldenberry</span> (Aguaymanto), a tomato relative. Groundcherries are sold in limited U.S. markets but face production challenges due to sprawling growth and fruits dropping when ripe.</p>
+                    <p>Van Eck’s team edited genes to increase fruit size, compact plant growth, and prevent fruit drop, making <span class="vocab">groundcherry</span> a potential commercial crop. However, high costs for <span class="vocab">CRISPR</span> licensing and regulatory approval pose barriers.</p>
+                    <p><strong>Did You Know?</strong> Other underutilized crops, like quinoa, faced similar challenges but became global staples. Regulatory frameworks for genetically edited crops vary, with the EU imposing stricter rules than the U.S.</p>
+                </div>
+                <div id="module5" class="module" style="display: none;">
+                    <h2><i class="fas fa-globe"></i> Module 5: Future Prospects and Ethical Considerations</h2>
+                    <p><span class="vocab">CRISPR</span> could domesticate obscure plants like <span class="vocab">foxtail</span>, <span class="vocab">oat-grass</span>, and <span class="vocab">cowpea</span>, potentially creating new staple crops that are <span class="vocab">drought tolerant</span> (Tolerante a la sequía) or heat-resistant, vital for climate change adaptation, as noted by Caixia Gao.</p>
+                    <p>Jonathan Jones highlights challenges in mainstream adoption due to consumer and farmer skepticism. Ethical concerns include <span class="vocab">CRISPR</span>’s accessibility, as Kudla notes its ease could lead to unregulated use. Balancing innovation with safety is key.</p>
+                    <p><strong>Case Study:</strong> <span class="vocab">Cowpea</span>, a drought-tolerant African crop, could be enhanced for higher yields, supporting food security in arid regions. Ethical debates focus on ecological impacts and equitable access to technology.</p>
+                </div>
+                <div id="module6" class="module" style="display: none;">
+                    <h2><i class="fas fa-question-circle"></i> Assessment</h2>
+                    <div class="quiz">
+                        <h3>Question 1: Which section mentions a tomato resistant to <span class="vocab">bacterial spot race</span> (Raza de mancha bacteriana)?</h3>
+                        <select id="q1">
+                            <option value="">Select an answer</option>
+                            <option value="C">Section C</option>
+                            <option value="A">Section A</option>
+                            <option value="B">Section B</option>
+                        </select>
+                        <button onclick="checkAnswer(&#39;q1&#39;, &#39;C&#39;, &#39;Correct! Section C discusses a strain resistant to bacterial spot race.&#39;, &#39;Incorrect. Review Section C for details on disease resistance.&#39;)">Submit</button>
+                        <div id="feedback1" class="feedback"></div>
+                    </div>
+                    <div class="quiz">
+                        <h3>Question 2: Match the statement to the researcher (Drag and Drop)</h3>
+                        <p>Statement: Domestication could allow plants to adapt to future environmental challenges.</p>
+                        <div class="drag-drop">
+                            <div class="drag-item" draggable="true" ondragstart="drag(event)" id="gao">Caixia Gao</div>
+                            <div class="drag-item" draggable="true" ondragstart="drag(event)" id="kudla">Jorg Kudla</div>
+                            <div class="drop-target" ondrop="drop(event, &#39;gao&#39;)" ondragover="allowDrop(event)">Drop Here</div>
+                        </div>
+                        <div id="feedback2" class="feedback"></div>
+                    </div>
+                    <div class="quiz">
+                        <h3>Question 3: Complete the sentence</h3>
+                        <p>An undesirable trait like loss of <input type="text" id="q3" placeholder="Enter one word"> may be caused by a tomato gene mutation.</p>
+                        <button onclick="checkAnswer(&#39;q3&#39;, &#39;flavour&#39;, &#39;Correct! Loss of flavour is a trade-off in domestication.&#39;, &#39;Incorrect. Hint: Think about supermarket tomatoes.&#39;)">Submit</button>
+                        <div id="feedback3" class="feedback"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./Javascript/script.js"></script>
+    </body>
+</html>
